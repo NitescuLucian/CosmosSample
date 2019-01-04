@@ -12,6 +12,7 @@ import CosmosRestApi
 class AccountController: UIViewController {
 
     let restApi = GaiaRestAPI()
+
     var selectedKey: Key? = nil
     
     override func viewDidLoad() {
@@ -27,8 +28,17 @@ class AccountController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        guard let key = selectedKey else { return }
-        restApi.getAccount(address: key.address) { result in
+        restApi.getNodeInfo { result in
+            switch result {
+            case .success(let nodeInfo):
+                print(nodeInfo)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        
+        guard let key = selectedKey, let addr = key.address else { return }
+        restApi.getAccount(address: addr) { result in
             switch result {
             case .success(let address):
                 print(address)

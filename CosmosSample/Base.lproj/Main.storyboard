@@ -18,6 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Jm-jg-IVK">
+                                <rect key="frame" x="303" y="39.666666666666664" width="56" height="29.999999999999993"/>
+                                <state key="normal" title="Recover"/>
+                                <connections>
+                                    <action selector="recoverKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NVR-lW-24j"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="data:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cY-WN-eHC">
                                 <rect key="frame" x="16" y="44" width="39" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -91,6 +98,23 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3V-Or-STy">
                                 <rect key="frame" x="158" y="748" width="59" height="30"/>
                                 <state key="normal" title="New key"/>
+                                <connections>
+                                    <action selector="newKeyAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mW8-vt-oGY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7PK-UK-Mtg">
+                                <rect key="frame" x="18" y="748" width="56" height="30"/>
+                                <state key="normal" title="Del Test"/>
+                                <connections>
+                                    <action selector="deleteTestAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ukg-Mp-eya"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKv-id-Dig">
+                                <rect key="frame" x="294" y="748" width="65" height="30"/>
+                                <state key="normal" title="Upd Pass"/>
+                                <connections>
+                                    <action selector="updatePass:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fyj-Rd-yET"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -102,13 +126,19 @@
                             <constraint firstItem="9k3-XP-bgg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Bvg-Wj-tfF"/>
                             <constraint firstItem="7cY-WN-eHC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="D8e-Jk-YKU"/>
                             <constraint firstItem="FUc-ke-ZKa" firstAttribute="leading" secondItem="7cY-WN-eHC" secondAttribute="trailing" constant="8" id="EqA-hP-OzX"/>
+                            <constraint firstItem="7PK-UK-Mtg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="Mq6-O7-dxY"/>
+                            <constraint firstItem="9Jm-jg-IVK" firstAttribute="centerY" secondItem="FUc-ke-ZKa" secondAttribute="centerY" id="Ohe-O0-J0u"/>
+                            <constraint firstItem="7PK-UK-Mtg" firstAttribute="centerY" secondItem="U3V-Or-STy" secondAttribute="centerY" id="QqO-Fz-54Y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9k3-XP-bgg" secondAttribute="trailing" id="SAz-6u-QDJ"/>
                             <constraint firstItem="bID-mb-ncD" firstAttribute="leading" secondItem="u0N-Wx-eeb" secondAttribute="leading" id="Uda-zF-pSE"/>
+                            <constraint firstItem="jKv-id-Dig" firstAttribute="centerY" secondItem="U3V-Or-STy" secondAttribute="centerY" id="WJo-8Q-yN3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jKv-id-Dig" secondAttribute="trailing" constant="16" id="dfZ-3d-pcW"/>
                             <constraint firstItem="FUc-ke-ZKa" firstAttribute="centerY" secondItem="7cY-WN-eHC" secondAttribute="centerY" id="eW4-Bu-IMn"/>
                             <constraint firstItem="7cY-WN-eHC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iOX-PN-5gh"/>
                             <constraint firstItem="dlg-Wv-16i" firstAttribute="leading" secondItem="u0N-Wx-eeb" secondAttribute="trailing" constant="8" id="iuz-uH-KJA"/>
                             <constraint firstItem="zcU-aJ-3dP" firstAttribute="top" secondItem="bID-mb-ncD" secondAttribute="bottom" constant="8" id="qE1-sx-KhO"/>
                             <constraint firstItem="zcU-aJ-3dP" firstAttribute="leading" secondItem="bID-mb-ncD" secondAttribute="leading" id="qHR-L7-Ok6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Jm-jg-IVK" secondAttribute="trailing" constant="16" id="s7c-bC-ECF"/>
                             <constraint firstItem="u0N-Wx-eeb" firstAttribute="top" secondItem="7cY-WN-eHC" secondAttribute="bottom" constant="8" id="sBv-6T-7zQ"/>
                             <constraint firstItem="9k3-XP-bgg" firstAttribute="top" secondItem="zcU-aJ-3dP" secondAttribute="bottom" constant="8" id="uhb-od-Sfd"/>
                             <constraint firstItem="dlg-Wv-16i" firstAttribute="centerY" secondItem="u0N-Wx-eeb" secondAttribute="centerY" id="v1y-1W-wVy"/>
