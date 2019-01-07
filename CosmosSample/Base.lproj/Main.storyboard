@@ -175,11 +175,59 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9T-IU-ztu">
-                                <rect key="frame" x="159" y="391" width="57" height="30"/>
+                                <rect key="frame" x="16" y="93" width="57" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Transfer"/>
                                 <connections>
                                     <action selector="transferAction:" destination="MOl-Uf-efT" eventType="touchUpInside" id="fw7-oh-0sb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQL-Wb-qe4">
+                                <rect key="frame" x="16" y="131" width="82" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Delegations"/>
+                                <connections>
+                                    <action selector="getDelegationsAction:" destination="MOl-Uf-efT" eventType="touchUpInside" id="hdg-PR-BKX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2T-wO-2N6">
+                                <rect key="frame" x="16" y="169" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Unbondings"/>
+                                <connections>
+                                    <action selector="getUnbondingDelegationsAction:" destination="MOl-Uf-efT" eventType="touchUpInside" id="WWs-Mj-ZWh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXu-bM-7YN">
+                                <rect key="frame" x="120" y="169" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Unbond"/>
+                                <connections>
+                                    <action selector="unbondAction:" destination="MOl-Uf-efT" eventType="touchUpInside" id="Ydh-sp-Agj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKh-ZO-aEk">
+                                <rect key="frame" x="16" y="207" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Redelegations"/>
+                                <connections>
+                                    <action selector="getRedelegationsAction:" destination="MOl-Uf-efT" eventType="touchUpInside" id="hiV-6U-M3i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="To5-vZ-4NT">
+                                <rect key="frame" x="120" y="206" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Redelegate"/>
+                                <connections>
+                                    <action selector="redelegationAction:" destination="MOl-Uf-efT" eventType="touchUpInside" id="jsy-Wk-bIP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lh8-bw-oAN">
+                                <rect key="frame" x="120" y="131" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Delegate"/>
+                                <connections>
+                                    <action selector="delegationAction:" destination="MOl-Uf-efT" eventType="touchUpInside" id="TeL-Vb-OZm"/>
                                 </connections>
                             </button>
                         </subviews>
