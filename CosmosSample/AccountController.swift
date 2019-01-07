@@ -197,7 +197,7 @@ class AccountController: UIViewController {
                         return
                 }
                 
-                let transferData = RedelegationPostData(sourceValidator: "cosmosvaloper1r627wlvrhkk637d4zarv2jpkuwuwurj978s96c", destValidator: "cosmosvaloper1r627wlvrhkk637d4zarv2jpkuwuwurj978s96c", delegator: accAddr, name: accName, pass: "Sw1ft2015", chain: "testing", amount: "5", accNum: accnum, sequence: seq)
+                let transferData = RedelegationPostData(sourceValidator: "cosmosvaloper1r627wlvrhkk637d4zarv2jpkuwuwurj978s96c", destValidator: "cosmosvaloper1f7lf8w6kw6pwutpknyawvhvtkmkneg4957xcdl", delegator: accAddr, name: accName, pass: "Sw1ft2015", chain: "testing", amount: "5", accNum: accnum, sequence: seq)
                 self.restApi.redelegation(from: accAddr, transferData: transferData) { result in
                     switch result {
                     case .success(let resp):
