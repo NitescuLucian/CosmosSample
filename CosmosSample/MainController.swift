@@ -39,7 +39,7 @@ class MainController: UIViewController {
         GaiaSimpleAPI().getAbciInfo() { result in
             switch result {
             case .success(let abciInfo):
-                self.info = abciInfo
+                self.info = abciInfo.first
                 self.info?.savetoDisk()
                 self.updateUI()
             case .failure(let error):
@@ -117,7 +117,7 @@ class MainController: UIViewController {
         restApi.getSeed { result in
             switch result {
             case .success(let seed):
-                let data = KeyPostData(name: "test", pass: "12345", seed: seed)
+                let data = KeyPostData(name: "test", pass: "12345", seed: seed.first)
                 self.restApi.createKey(keyData: data) { result in
                     switch result {
                     case .success(_):
