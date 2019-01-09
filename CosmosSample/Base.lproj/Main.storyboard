@@ -199,7 +199,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXu-bM-7YN">
-                                <rect key="frame" x="120" y="169" width="55" height="30"/>
+                                <rect key="frame" x="132" y="169" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Unbond"/>
                                 <connections>
@@ -215,7 +215,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="To5-vZ-4NT">
-                                <rect key="frame" x="120" y="206" width="78" height="30"/>
+                                <rect key="frame" x="132" y="207" width="78" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Redelegate"/>
                                 <connections>
@@ -223,7 +223,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lh8-bw-oAN">
-                                <rect key="frame" x="120" y="131" width="62" height="30"/>
+                                <rect key="frame" x="132" y="131" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Delegate"/>
                                 <connections>
@@ -231,19 +231,27 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dj9-eD-C6z">
-                                <rect key="frame" x="16" y="245" width="91" height="30"/>
+                                <rect key="frame" x="16" y="244" width="108" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="DelValidators"/>
+                                <state key="normal" title="DelegValidators"/>
                                 <connections>
                                     <action selector="getDelegatorValidators:" destination="MOl-Uf-efT" eventType="touchUpInside" id="UeC-Nf-qUT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVZ-Gh-IoA">
-                                <rect key="frame" x="120" y="244" width="83" height="30"/>
+                                <rect key="frame" x="132" y="244" width="101" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="DelValidator"/>
+                                <state key="normal" title="DelegValidator"/>
                                 <connections>
                                     <action selector="getDelegatorValidator:" destination="MOl-Uf-efT" eventType="touchUpInside" id="nWA-Q1-bgK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryh-MC-Cq3">
+                                <rect key="frame" x="16" y="282" width="75" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="StakingTxs"/>
+                                <connections>
+                                    <action selector="getDelegatorStakingTransactions:" destination="MOl-Uf-efT" eventType="touchUpInside" id="swU-3R-pta"/>
                                 </connections>
                             </button>
                         </subviews>

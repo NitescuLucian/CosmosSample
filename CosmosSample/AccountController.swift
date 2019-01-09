@@ -103,6 +103,21 @@ class AccountController: UIViewController {
         }
     }
     
+    @IBAction func getDelegatorStakingTransactions(_ sender: Any) {
+        getAccountUpdate { success in
+            if success, let acc = self.account?.value?.address {
+                self.restApi.getStakingTxs(for: acc, completion: { result in
+                    switch result {
+                    case .success(let txs):
+                        print(txs)
+                    case .failure(let error):
+                        print(error.localizedDescription)
+                    }
+                })
+            }
+        }
+    }
+    
     @IBAction func getDelegatorValidator(_ sender: Any) {
         getAccountUpdate { success in
             if success, let acc = self.account?.value?.address {

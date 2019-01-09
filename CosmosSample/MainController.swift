@@ -49,15 +49,7 @@ class MainController: UIViewController {
         
         getkeys()
         
-        restApi.getKey(by: "kytzu") { result in
-            switch result {
-            case .success(let key):
-                print(key)
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
-
+        GaiaRestAPI.selfTesting()
     }
     
     @IBAction func updatePass(_ sender: Any) {
