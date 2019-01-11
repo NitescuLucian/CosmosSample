@@ -36,7 +36,7 @@ class MainController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        GaiaSimpleAPI().getAbciInfo() { result in
+        GaiaTendermintAPI().getAbciInfo() { result in
             switch result {
             case .success(let abciInfo):
                 self.info = abciInfo.first
@@ -49,7 +49,7 @@ class MainController: UIViewController {
         
         getkeys()
         
-        GaiaRestAPI.selfTesting()
+        GaiaRestTester.selfTesting()
     }
     
     @IBAction func updatePass(_ sender: Any) {
@@ -106,7 +106,7 @@ class MainController: UIViewController {
     }
     
     @IBAction func newKeyAction(_ sender: Any) {
-        restApi.getSeed { result in
+        restApi.createSeed { result in
             switch result {
             case .success(let seed):
                 let data = KeyPostData(name: "test", pass: "12345", seed: seed.first)
