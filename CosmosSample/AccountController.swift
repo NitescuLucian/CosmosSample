@@ -171,7 +171,7 @@ class AccountController: UIViewController {
                     return
                 }
                 
-                let transferData = TransferPostData(name: accName, pass: "Sw1ft2015", chain: "kytzu-001", amount: "50", denom: "STAKE", accNum: accnum, sequence: seq)
+                let transferData = TransferPostData(name: accName, pass: "test1234", chain: "kytzu-001", amount: "50", denom: "STAKE", accNum: accnum, sequence: seq)
                 self.restApi.bankTransfer(to: "cosmos1wtv0kp6ydt03edd8kyr5arr4f3yc52vp5g7na0", transferData: transferData) { result in
                     switch result {
                     case .success(let resp):
@@ -207,7 +207,7 @@ class AccountController: UIViewController {
                         return
                 }
                 
-                let transferData = DelegationPostData(validator: "cosmosvaloper1r627wlvrhkk637d4zarv2jpkuwuwurj978s96c", delegator: accAddr, name: accName, pass: "Sw1ft2015", chain: "kytzu-001", amount: "1", denom: "STAKE", accNum: accnum, sequence: seq)
+                let transferData = DelegationPostData(validator: "cosmosvaloper1r627wlvrhkk637d4zarv2jpkuwuwurj978s96c", delegator: accAddr, name: accName, pass: "test1234", chain: "kytzu-001", amount: "1", denom: "STAKE", accNum: accnum, sequence: seq)
                 self.restApi.delegation(from: accAddr, transferData: transferData) { result in
                     switch result {
                     case .success(let resp):
@@ -242,7 +242,7 @@ class AccountController: UIViewController {
                         return
                 }
                 
-                let transferData = RedelegationPostData(sourceValidator: "cosmosvaloper1r627wlvrhkk637d4zarv2jpkuwuwurj978s96c", destValidator: "cosmosvaloper1f7lf8w6kw6pwutpknyawvhvtkmkneg4957xcdl", delegator: accAddr, name: accName, pass: "Sw1ft2015", chain: "kytzu-001", amount: "4", accNum: accnum, sequence: seq)
+                let transferData = RedelegationPostData(sourceValidator: "cosmosvaloper1r627wlvrhkk637d4zarv2jpkuwuwurj978s96c", destValidator: "cosmosvaloper1f7lf8w6kw6pwutpknyawvhvtkmkneg4957xcdl", delegator: accAddr, name: accName, pass: "test1234", chain: "kytzu-001", amount: "4", accNum: accnum, sequence: seq)
                 self.restApi.redelegation(from: accAddr, transferData: transferData) { result in
                     switch result {
                     case .success(let resp):
@@ -277,7 +277,7 @@ class AccountController: UIViewController {
                         return
                 }
                 
-                let transferData = UnbondingDelegationPostData(validator: "cosmosvaloper1r627wlvrhkk637d4zarv2jpkuwuwurj978s96c", delegator: accAddr, name: accName, pass: "Sw1ft2015", chain: "kytzu-001", amount: "1000", accNum: accnum, sequence: seq)
+                let transferData = UnbondingDelegationPostData(validator: "cosmosvaloper1r627wlvrhkk637d4zarv2jpkuwuwurj978s96c", delegator: accAddr, name: accName, pass: "test1234", chain: "kytzu-001", amount: "1000", accNum: accnum, sequence: seq)
                 self.restApi.unbonding(from: accAddr, transferData: transferData) { result in
                     switch result {
                     case .success(let resp):
